@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+    <button onclick="change()"
+    style="background-color: pink;
+    border: dashed 3px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;"><br>Transform to a Human</button>
+
+    <button onclick="revert()"
+    style="background-color: pink;
+    border: dashed 3px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;"><br>Transform back to a Doll</button>
+
+    <br>
+    <img id="barbiepic" src="media/barbiedoll.jpg" style="margin-left: 11.5vw;" alt="Barbie" width="250px">
+
+    <script> 
+        function change() {
+            document.getElementById("barbiepic").src = "media/barbiehuman.jpg";
+        }
+        function revert() {
+            document.getElementById("barbiepic").src = "media/barbiedoll.jpg";
+        }
+    </script>
+</body>
+</html>
